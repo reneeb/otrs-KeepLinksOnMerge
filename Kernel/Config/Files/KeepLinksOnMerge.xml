@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="1.0" init="Config">
+    <ConfigItem Name="Ticket::EventModulePost###802-KeepLinksOnMerge" Required="0" Valid="1">
+        <Description Translatable="1">Add Links from the merged ticket into the main ticket.</Description>
+        <Group>Ticket</Group>
+        <SubGroup>Core::Ticket</SubGroup>
+        <Setting>
+            <Hash>
+                <Item Key="Module">Kernel::System::Ticket::Event::KeepLinksOnMerge</Item>
+                <Item Key="Event">TicketMerge</Item>
+            </Hash>
+        </Setting>
+    </ConfigItem>
+</otrs_config>
